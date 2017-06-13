@@ -1,0 +1,125 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+	<include url="skin/vtourskin.xml" />
+
+	<plugin name="gyro" devices="html5" keep="true"
+			url="%SWFPATH%/plugins/gyro2.js"
+			enabled="false"
+			onavailable="gyro_available_info();"
+	/>
+	<plugin name="soundinterface"
+			url.flash="%SWFPATH%/plugins/soundinterface.swf"
+			url.html5="%SWFPATH%/plugins/soundinterface.js"
+			rootpath=""
+			preload="true"
+			keep="true"
+	/>
+	<plugin name="snd" url="music.png" keep="true" align="righttop" width="45" height="38" x="4" y="20" alpha="1" onover="tween(alpha,1);" onout="tween(alpha,0.5);"
+			crop="60|66|60|50"
+			onloaded="if(ismobile,set(scale,1));"
+			onclick="pausesoundtoggle(bgsnd);switch(crop, 0|5|60|50, 60|66|60|50);"
+
+	/>
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		playsound(bgsnd, 'cjing.mp3', 0);
+		set(layer[contspot1].visible, false);
+		set(layer[contspot2].visible, false);
+		set(layer[contspot3].visible, false);
+		set(layer[bgspot2].visible,false );
+		set(layer[gyrobutton3].visible,false );
+
+	</action>
+	<action name="bgsnd_action" autorun="onstart">
+		playsound(bgsnd, 'cjing.mp3', 0);
+	</action>
+
+	<action name="gyrohidden">
+		set(layer[gyrobutton3].visible, false);
+		set(layer[gyrobutton2].visible, true);
+	</action>
+	<action name="gyrohidden2">
+		set(layer[gyrobutton3].visible, true);
+		set(layer[gyrobutton2].visible, false);
+	</action>
+
+
+	<action name="all_hidde">
+		set(layer[contspot1].visible,false );
+		set(layer[contspot2].visible,false );
+		set(layer[contspot3].visible,false );
+		set(layer[bgspot2].visible,false );
+	</action>
+
+	<action name="spot1_hidden">
+		set(layer[contspot1].visible, true);
+		set(layer[bgspot2].visible, true);
+		set(layer[contimg].visible, false);
+	</action>
+	<action name="spot2_hidden">
+		set(layer[contspot2].visible, true);
+		set(layer[bgspot2].visible, true);
+		set(layer[contimg].visible, false);
+	</action>
+	<action name="spot3_hidden">
+		set(layer[contspot3].visible, true);
+		set(layer[bgspot2].visible, true);
+		set(layer[contimg].visible, false);
+	</action>
+
+	<action name="bodyhidden1">
+		set(layer[text].visible, false);
+		openurl(vtourVideo/tour.html),_parent;
+	</action>
+	<action name="bodyhidden2">
+		set(layer[text2].visible, false);
+		openurl(vtourVideo/tour.html),_parent;
+	</action>
+	<action name="bodyhidden3">
+		set(layer[text3].visible, false);
+		openurl(vtourVideo/tour.html),_parent;
+	</action>
+	<scene name="scene_achilleion-hof-unten" title="Achilleion - Garden" onstart="" thumburl="home.jpg" lat="39.563340" lng="19.904324" heading="0.0">
+
+		<view hlookat="-1" vlookat="11" fovtype="MFOV" fov="120" fovmin="70" fovmax="140" limitview="auto" />
+		<preview url="home.jpg" />
+		<image>
+			<sphere url="home.jpg"  onclick="add_text();"/>
+		</image>
+		<layer name="bgspot2" url="%SWFPATH%/plugins/textfield.swf" align="centertop" x="0" y="0" visible="true" width="100%" height="100%" background="false"
+			   html="" css="height:100%;color:#ffffff; font-family:Arial;font-size:42px;text-align:center;" onclick="all_hidde()"/>
+
+		<hotspot name="spot1" url="yyushu.png" onloaded="do_crop_animation(264,262,0);add_all_the_time_tooltip()" width="190" ath="-70" atv="-18" onclick="spot1_hidden();toggle(layer[text].visible);" text="自定义文字"/>
+		<layer name="contspot1" url="%SWFPATH%/plugins/textfield.swf" align="centertop" x="0" y="20%" visible="true" bordercolor="0xffffff" width="400" height="180" background="false"
+			   html="data:testspot1" css="color:#ffffff; font-family:Arial;font-size:42px;text-align:center;" onclick="bodyhidden1()"/>
+		<data name="testspot1">
+			<img src="sqzjd.gif" style="width:90%;"/>
+		</data>
+
+		<hotspot name="spot2" url="bubao.png" onloaded="do_crop_animation(264,262,0);add_all_the_time_tooltip()" width="190" ath="200" atv="18" onclick="spot2_hidden();toggle(layer[text].visible);" text="自定义文字"/>
+		<layer name="contspot2" url="%SWFPATH%/plugins/textfield.swf" align="centertop" x="0" y="20%" visible="true" bordercolor="0xffffff" width="400" height="150" background="false"
+			   html="data:testspot2" css="color:#ffffff; font-family:Arial;font-size:42px;text-align:center;" onclick="bodyhidden2()"/>
+		<data name="testspot2">
+			<img src="baizheq.gif" style="width:90%;"/>
+		</data>
+
+		<hotspot name="spot3" url="huabi.png" onloaded="do_crop_animation(264,262,0);add_all_the_time_tooltip()" width="190" ath="250" atv="168" onclick="spot3_hidden();toggle(layer[text].visible);" text="自定义文字"/>
+		<layer name="contspot3" url="%SWFPATH%/plugins/textfield.swf" align="centertop" x="0" y="20%" visible="true" bordercolor="0xffffff" width="400" height="160" background="false"
+			   html="data:testspot3" css="color:#ffffff; font-family:Arial;font-size:42px;text-align:center;" onclick="bodyhidden3()"/>
+		<data name="testspot3">
+			<img src="jmmx.gif" style="width:90%;"/>
+		</data>
+
+		<layer name="contimg" url="%SWFPATH%/plugins/textfield.swf" align="centerbottom" x="0" y="0" width="100%" height="22%" background="false"
+			   html="data:testimg" css="color:#ffffff; font-family:Arial;font-size:42px;height:400px;width:100%;text-align:center;" />
+		<data name="testimg">
+			<img src="homebottom.png" style="width:80%;"/>
+		</data>
+
+		<layer name="gyrobutton3" url="gyroicon.png" scale="1" align="righttop" visible="false" x="9" y="80" width="30" height="30"
+			   onclick="switch(plugin[gyro].enabled);gyrohidden();"/>
+
+		<layer name="gyrobutton2" url="gyroicon2.png" scale="1" align="righttop" x="9" y="80" width="30" height="30"
+			   onclick="switch(plugin[gyro].enabled);gyrohidden2();"/>
+	</scene>
+</krpano>

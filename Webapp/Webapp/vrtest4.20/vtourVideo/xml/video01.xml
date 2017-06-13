@@ -1,0 +1,121 @@
+﻿<krpano>
+	<plugin name="gyro" devices="html5" keep="true"
+			url="%SWFPATH%/plugins/gyro2.js"
+			enabled="true"
+			camroll="true"
+			friction="0.0"
+			touch_mode="full"
+			sensor_mode="1"
+			softstart="0.5"
+			autocalibration="true"
+			onavailable=""
+			onunavailable=""
+			onenable=""
+			ondisable=""
+	/>
+
+	<action name="gyro_available_info">
+		set(layer[gyrobutton].visible, true);
+	</action>
+	<action name="startup" autorun="onstart">
+		set(layer[gyrobutton].visible, false);
+		set(layer[gyrobutton2].visible, false);
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(videopano);
+		  );
+
+	</action>
+
+	<scene name="videopano" title="七维科技全景视频">
+
+		<!-- include the videoplayer interface / skin (with VR support) -->
+		<include url="../skin/videointerface.xml" />
+
+		<action name="setup_video_controls">
+			<!-- add  items to the control menu of the videointerface skin -->
+			videointerface_addmenuitem(configmenu, vqtitle, 'Select Video Quality', true, videointerface_toggle_configmenu() );
+			videointerface_addmenuitem(configmenu, q1, '1024x512',  false, change_video_file(q1, '9602.mp4|video-1024x512.webm'); );
+			videointerface_addmenuitem(configmenu, q2, '1920x9602',  false, change_video_file(q2, '9602.mp4|video-1920x9602.webm'); );
+
+			<!-- select/mark the current video (see the initial videourl attribute) -->
+			if(device.ios,
+			videointerface_selectmenuitem(configmenu, q1);
+			,
+			videointerface_selectmenuitem(configmenu, q2);
+
+			);
+		</action>
+		<action name="videointerface_toggle_configmenu">
+			if(layer[videointerface_configmenu_menu].state == 'closed',
+			if(layer[videointerface_viewmenu_menu].state == 'opened', videointerface_hidemenu(viewmenu) );
+			videointerface_showmenu(configmenu);
+			,
+			videointerface_hidemenu(configmenu);
+			);
+		</action>
+
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="%SWFPATH%/plugins/videoplayer.js"
+		        url.flash="%SWFPATH%/plugins/videoplayer.swf"
+
+				posterurl.ios=""
+				videourl.ios="../video/video01mp4|../video-1024x512ss9602fss.webm"
+
+				posterurl.no-ios=""
+				videourl.no-ios="../video/video01mp4|../video-1920x9602ss9602fss.webm"
+
+		        pausedonstart="false"
+		        loop="false"
+		        volume="1.0"
+
+		        onloaded="videointerface_setup_interface(get(name));setup_video_controls();add_video_sources();"
+		        />
+
+		<action name="backhome">
+			set(layer[text].visible, false);
+			openurl(../home.html),_parent;
+		</action>
+		<action name="gyrohidden">
+		set(layer[gyrobutton].visible, false);
+		set(layer[gyrobutton2].visible, true);
+	</action>
+		<action name="gyrohidden2">
+			set(layer[gyrobutton].visible, true);
+			set(layer[gyrobutton2].visible, false);
+		</action>
+		<layer name="gyrobutton" url="../gyroicon.png" scale="1" align="righttop" x="9" y="26" width="30" height="30" visible="true"
+			   onclick="switch(plugin[gyro].enabled);gyrohidden();"/>
+
+		<layer name="gyrobutton2" url="../gyroicon2.png" scale="1" align="righttop" x="9" y="26" width="30" height="30" visible="true"
+			   onclick="switch(plugin[gyro].enabled);gyrohidden2();"/>
+
+
+		<!-- </layer> -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+
+		<!-- add the video sources and play the video -->
+		<action name="add_video_sources">
+			videointerface_addsource('1024x512', './video/video01.mp4|%CURRENTXML%/video-1024x512.webm|%CURRENTXML%/iphone-audio.m4a', '');
+			videointerface_addsource('1920x9602', './video/video01.mp4|%CURRENTXML%/video-1920x99602.webm|%CURRENTXML%/iphone-audio.m4a', '');
+			if(device.ios,
+				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
+				videointerface_play('1024x512');
+			  ,
+				videointerface_play('1920x9602');
+			  );
+		</action>
+
+
+
+
+	</scene>
+
+</krpano>

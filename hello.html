@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="test1">成熟的程度</button>
+
+你必须先引入jQuery1.8或以上版本
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/layer.js"></script>
+<!--<script src="js/jquery-3.2.0.min.js"></script>-->
+<!--<script scr="js/layer.js"></script>-->
+<script>
+    $('#test1').on('click', function(){
+        layer.msg('Hello layer');
+    });
+</script>
+
+</body>
+</html>

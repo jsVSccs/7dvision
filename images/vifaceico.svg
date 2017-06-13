@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 123 113" style="enable-background:new 0 0 123 113;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_6_);}
+	.st2{clip-path:url(#SVGID_10_);}
+	.st3{filter:url(#Adobe_OpacityMaskFilter);}
+	.st4{clip-path:url(#SVGID_14_);fill:url(#SVGID_16_);}
+	.st5{clip-path:url(#SVGID_14_);mask:url(#SVGID_15_);fill:url(#SVGID_17_);}
+	.st6{fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="862.1" y="82" width="1239.8" height="866.9"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<defs>
+			<rect id="SVGID_3_" x="862.1" y="-129.5" width="1239.8" height="1228.9"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_4_);">
+			
+				<image style="overflow:visible;" width="1024" height="1015" xlink:href="69BC45AB83E5394C.jpg"  transform="matrix(1.2108 0 0 1.2108 862.0958 -129.4583)">
+			</image>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_5_" x="522" y="82" width="513.6" height="866.9"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<defs>
+			<rect id="SVGID_7_" x="517.2" y="-129.5" width="3705" height="1228.9"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_8_);">
+			
+				<image style="overflow:visible;" width="1024" height="1015" xlink:href="69BC45AB83E5394D.jpg"  transform="matrix(3.6181 0 0 1.2108 517.2015 -129.4583)">
+			</image>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_9_" x="1935.5" y="82" width="506.5" height="866.9"/>
+	</defs>
+	<clipPath id="SVGID_10_">
+		<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st2">
+		<defs>
+			<rect id="SVGID_11_" x="-1331.7" y="-129.5" width="3773.7" height="1228.9"/>
+		</defs>
+		<clipPath id="SVGID_12_">
+			<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_12_);">
+			
+				<image style="overflow:visible;" width="1024" height="1015" xlink:href="69BC45AB83E5394B.jpg"  transform="matrix(3.6852 0 0 1.2108 -1331.6797 -129.4583)">
+			</image>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_13_" x="522" y="82" width="1920" height="866.9"/>
+	</defs>
+	<clipPath id="SVGID_14_">
+		<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+	</clipPath>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="522" y="82" width="1920" height="866.9">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="522" y="82" width="1920" height="866.9" id="SVGID_15_">
+		<g class="st3">
+			
+				<linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="1323.7371" y1="1013.9313" x2="1324.7371" y2="1013.9313" gradientTransform="matrix(0 -862.2077 -862.2077 0 875701.375 1142282.125)">
+				<stop  offset="0" style="stop-color:#000000"/>
+				<stop  offset="1" style="stop-color:#808080"/>
+			</linearGradient>
+			<rect x="522" y="82" class="st4" width="1920" height="866.9"/>
+		</g>
+	</mask>
+	
+		<linearGradient id="SVGID_17_" gradientUnits="userSpaceOnUse" x1="1323.7371" y1="1013.9313" x2="1324.7371" y2="1013.9313" gradientTransform="matrix(0 -862.2077 -862.2077 0 875701.375 1142282.125)">
+		<stop  offset="0" style="stop-color:#0097E0"/>
+		<stop  offset="1" style="stop-color:#2C46C6"/>
+	</linearGradient>
+	<rect x="522" y="82" class="st5" width="1920" height="866.9"/>
+</g>
+<path class="st6" d="M31.9,111.3c0,0-0.1,0-0.1,0c-2.2-0.1-3.9-1.9-3.8-4l0.3-9.5C23,96.2,13.2,92.2,11,83.6c-2-7.7-1.2-15.4-0.6-20
+	c0.1-0.5,0.1-0.9,0.1-1.2c-1-0.4-2.8-0.8-4.3-0.9c-1.1-0.1-2.1-0.7-2.8-1.6c-0.7-0.9-0.9-2.1-0.6-3.1c1.4-6.5,6.4-14.1,8.3-16.7
+	C12.7,17.7,24.9,9.5,25.4,9.2c23.3-17,37,0.8,37.1,0.9c1.2,1.6,1,3.8-0.4,5.2c-5.7,5.6-8.5,11.3-8.1,17.1
+	c0.6,10.1,10.2,17.5,10.3,17.5c1.7,1.3,2.1,3.8,0.8,5.5c-1.3,1.7-3.8,2.1-5.5,0.8c-0.5-0.4-12.6-9.6-13.5-23.3
+	c-0.4-7.1,2.1-13.9,7.7-20.3c-3.7-2.8-11.7-5.9-24,3.1c-0.5,0.4-10,7.1-11.1,25.9c0,0.8-0.3,1.5-0.8,2.1c-1.3,1.8-4.4,6.5-6.3,10.9
+	c3.4,1,6.7,2.9,6.7,6.6c0,0.7-0.1,1.9-0.3,3.4c-0.4,4.1-1.2,10.9,0.4,17.2c1.4,5.5,11.2,8.6,14.5,9.2c1.9,0.4,3.2,2.1,3.2,4
+	l-0.4,12.7C35.8,109.6,34,111.3,31.9,111.3"/>
+<path class="st6" d="M92.1,111.3c-2.1,0-3.8-1.7-3.9-3.8l-0.4-12.7c0-1.1,0.4-2.1,1.2-2.9c0.8-0.8,1.8-1.2,2.9-1.1
+	c0.1,0,10.4,0.2,12-5.6c2-7.6,1.8-18.6,1.8-22.8l0-1.3c0-3.7,3.3-5.6,6.7-6.6c-1.9-4.4-5-9.1-6.3-10.9c-0.5-0.6-0.7-1.3-0.8-2.1
+	c-1-18.9-10.5-25.6-10.9-25.8c-12.4-9.1-20.4-5.9-24.1-3.2c5.6,6.4,8.1,13.2,7.7,20.3c-0.9,13.7-12.9,22.9-13.5,23.3
+	c-1.7,1.3-4.2,1-5.5-0.8c-1.3-1.7-1-4.2,0.8-5.5c0.1-0.1,9.7-7.5,10.4-17.6c0.3-5.8-2.4-11.5-8.1-17.1c-1.4-1.4-1.6-3.6-0.4-5.2
+	c0.1-0.2,13.8-17.9,37.3-0.8c0.4,0.2,12.6,8.5,14.2,30.7c1.9,2.7,6.9,10.3,8.3,16.7c0.2,1.1,0,2.2-0.6,3.1c-0.7,0.9-1.7,1.5-2.8,1.6
+	c-1.5,0.2-3.4,0.6-4.4,1c0.1,4.5,0.2,16.2-2,24.8c-2,7.7-9.6,10.6-15.7,11.3l0.3,8.8c0.1,2.2-1.6,4-3.8,4
+	C92.1,111.3,92.1,111.3,92.1,111.3"/>
+</svg>

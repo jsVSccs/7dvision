@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <title>七维科技</title>
+    <meta name="keywords" content="viface  精准实时  自由变换 S1 四面八方  尽在掌控 vibox 行业领先  强大专业 vipano 身临其境  还原真实  了解更多...">
+    <meta name="description" content="viface  精准实时  自由变换 S1 四面八方  尽在掌控 vibox 行业领先  强大专业 vipano 身临其境  还原真实  了解更多...">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/padmain.css">
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script>
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone","SymbianOS", "Windows Phone", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+//                    alert("移动端")
+                    flag = false;
+                    break;
+
+                }
+            }
+            if(window.screen.width>=768){
+//                alert("pc端")
+                flag = true;
+            }
+//            alert(3)
+            return flag;
+        }
+        IsPC();
+    </script>
+</head>
+<body>
+<div class="app_box">
+    <div class="index eng_index">
+        <nav class="navbar navbar-default clear_circular bgblacker" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle anav_shade" data-toggle="collapse" data-target="#example-navbar-collapse" style="border:0;margin-right:10px;">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <a class="navbar-brand" href="index_en.html"><img src="../images/7dlog.svg" alt=""></a>
+                    <p class="col-md-11 home_tit">7D VISION</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="s1_en.html" class="scro01_bg">
+                        <span class="indx_tit">S1</span>
+                        <span class="indx_word">All-in-one VR live camera <br>&nbsp;</span>
+                        <span class="indx_center">
+                            <img src="../images/s1_img.png" alt="">
+                        </span>
+                        <span class="indx_btn">Learn more</span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="viface_en.html" class="scro02_bg">
+                        <span class="indx_tit">viface</span>
+                        <span class="indx_word">Drive your characters in Real-time<br>&nbsp;</span>
+                        <span class="indx_center"></span>
+                        <span class="indx_btn">Learn more</span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="vipano_en.html" class="scro03_bg">
+                        <span class="indx_tit">vipano</span>
+                        <span class="indx_word">A Complete cinematic VR suite<br>&nbsp;</span>
+                        <span class="indx_center"></span>
+                        <span class="indx_btn">Learn more</span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="vibox_en.html" class="scro04_bg">
+                        <span class="indx_tit">vibox</span>
+                        <span class="indx_word">Next-Gen virtual studio for Broadcasting industry</span>
+                        <span class="indx_center"></span>
+                        <span class="indx_btn">Learn more</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="shad_navigation"></div>
+
+</div>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../dist/js/swiper.jquery.min.js"></script>
+<script src="app.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop : true,
+        autoplay: 30000,
+        pagination : '.swiper-pagination'
+    });
+</script>
+</body>
+</html>
